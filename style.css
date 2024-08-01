@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: rgba(48, 213, 141, 0.496); */
+    text-align: center;
+}
+
+header {
+    background-color: #085070;
+    color: aliceblue;
+    padding: 0.8em;
+    /* margin-right: 90px; */
+    display: block;
+    /* width:100% */
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.top-puppies img {
+    display: block;
+    /* padding: 5%;
+    margin: 5%; */
+    margin: 3em;
+    width: 75%;
+}
+
+
+/* should not be included on phone i think*/
+
+.top-puppies p {
+    display: none;
+}
+
+
+/* more pappies */
+
+.more-puppies img {
+    display: block;
+    margin: 3.1em;
+    width: 75%;
+}
+
+footer {
+    font-weight: bolder;
+    color: white;
+    background-color: blue;
+    padding: 1.5em 0;
+    margin-top: 0.3em;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (min-width:500px) {
+    .top-puppies,
+    .more-puppies {
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-color: rgba(193, 123, 37, 0.394);
+    }
+}
