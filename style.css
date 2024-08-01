@@ -1,67 +1,134 @@
+/* Resetting default browser styles */
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+
+/* Body styling */
+
 body {
-    /* background-color: rgba(48, 213, 141, 0.496); */
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: rgba(127, 255, 212, 0.242);
 }
+
+
+/* Header styling */
 
 header {
     background-color: #085070;
-    color: aliceblue;
+    color: white;
     padding: 0.8em;
-    /* margin-right: 90px; */
-    display: block;
-    /* width:100% */
 }
 
+header h1 {
+    margin: 0;
+}
+
+
+/* Banner image styling */
+
 .banner img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Top puppies section */
+
+.top-puppies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
 }
 
 .top-puppies img {
-    display: block;
-    /* padding: 5%;
-    margin: 5%; */
-    margin: 3em;
-    width: 75%;
+    margin: 1em 0;
+}
+
+.top-puppies .missing-puppy {
+    background-color: #ff1493;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
 }
 
 
-/* should not be included on phone i think*/
+/* More puppies section */
 
-.top-puppies p {
-    display: none;
+.more-puppies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
 }
-
-
-/* more pappies */
 
 .more-puppies img {
-    display: block;
-    margin: 3.1em;
     width: 75%;
+    height: auto;
+    margin: 1em 0;
 }
 
+
+/* Section heading */
+
+h2 {
+    margin: 1em 0;
+}
+
+
+/* Footer styling */
+
 footer {
-    font-weight: bolder;
+    background-color: #085070;
     color: white;
-    background-color: blue;
     padding: 1.5em 0;
-    margin-top: 0.3em;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
 
-@media (min-width:500px) {
-    .top-puppies,
-    .more-puppies {
-        display: flex;
+
+/* Media Queries for larger screens */
+
+@media(min-width: 600px) {
+    .top-puppies {
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
-    body {
-        background-color: rgba(193, 123, 37, 0.394);
+    .top-puppies .missing {
+        background-color: rgba(118, 49, 104, 0.533);
+        /* margin: 0 5em; */
+        /* padding: 5rem; */
+        padding: 8.5em 8em;
+    }
+    .more-puppies {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .more-puppies img {
+        width: 50%;
+        margin: 0.6em;
+    }
+    .top-puppies {
+        width: 33%;
+        flex: 1;
+    }
+    .missing-puppy {
+        width: auto;
+        flex: 1;
+    }
+    .banner img {
+        width: 100%;
+        height: auto;
     }
 }
