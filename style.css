@@ -102,7 +102,7 @@ footer {
 @media(min-width: 600px) {
     .top-puppies {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     .top-puppies .missing {
@@ -116,11 +116,11 @@ footer {
         justify-content: space-around;
     }
     .more-puppies img {
-        width: 50%;
+        width: auto;
         margin: 0.6em;
     }
     .top-puppies {
-        width: 33%;
+        width: auto;
         flex: 1;
     }
     .missing-puppy {
