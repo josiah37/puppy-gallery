@@ -1,134 +1,34 @@
-/* Resetting default browser styles */
-
+<!-- Global Reset: Remove default margin and padding from all elements -->
 * {
+    margin: 0;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
-
-/* Body styling */
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: rgba(127, 255, 212, 0.242);
+/* Ensure all images take up the full width of their containers */
+img {
+    width: 100%;
 }
 
-
-/* Header styling */
-
-header {
+/* Styling for the blue background section with large white text */
+.blueBG {
+    font-size: 40px;
     background-color: #085070;
-    color: white;
-    padding: 0.8em;
+    color: #fff;
 }
 
-header h1 {
-    margin: 0;
+/* Semi-transparent pink background for missing image section */
+.missing {
+    background-color: rgba(198, 51, 156, 0.424);
 }
 
-
-/* Banner image styling */
-
-.banner img {
-    width: 100%;
-    height: auto;
+/* Font size adjustment for the 'missing' section text */
+.missing p {
+    font-size: 25px;
 }
 
-
-/* Top puppies section */
-
-.top-puppies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em 0;
-}
-
-.top-puppies img {
-    margin: 1em 0;
-}
-
-.top-puppies .missing-puppy {
-    background-color: #ff1493;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-}
-
-
-/* More puppies section */
-
-.more-puppies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em 0;
-}
-
-.more-puppies img {
-    width: 75%;
-    height: auto;
-    margin: 1em 0;
-}
-
-
-/* Section heading */
-
-h2 {
-    margin: 1em 0;
-}
-
-
-/* Footer styling */
-
-footer {
-    background-color: #085070;
-    color: white;
-    padding: 1.5em 0;
-    /* position: fixed; */
-    width: 100%;
-    bottom: 0;
-}
-
-
-/* Media Queries for larger screens */
-
-@media(min-width: 600px) {
-    .top-puppies {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .top-puppies .missing {
-        background-color: rgba(118, 49, 104, 0.533);
-        /* margin: 0 5em; */
-        /* padding: 5rem; */
-        padding: 8.5em 8em;
-    }
-    .more-puppies {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .more-puppies img {
-        width: auto;
-        margin: 0.6em;
-    }
-    .top-puppies {
-        width: auto;
-        flex: 1;
-    }
-    .missing-puppy {
-        width: auto;
-        flex: 1;
-    }
-    .banner img {
-        width: 100%;
-        height: auto;
+/* Increase font size for larger screens */
+@media (min-width: 992px) {
+    .missing p {
+        font-size: 45px;
     }
 }
