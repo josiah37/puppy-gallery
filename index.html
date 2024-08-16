@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive puppy page</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy Lovers Page</title>
 
+    <!-- Bootstrap CSS for responsive layout and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript for functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>puppy lovers page</h1>
-        </div>
+    <!-- Header section with blue background and centered text -->
+    <header class="blueBG text-center p-3 ">
+        <h1>Puppy lovers page</h1>
     </header>
 
-    <section class="banner">
-        <img src="images/banner-puppies.jpg" alt="image of a pappy">
+    <!-- Banner image section -->
+    <section class="mb-5">
+        <img src="./images/banner-puppies.jpg" alt="image of banner puppy" />
     </section>
 
-    <section class="top-puppies">
-        <img src="images/puppy-1.jpg" alt="puppy image 1" class="image1">
-        <p>missing puppy</p>
-        <img src="images/puppy-2.jpg" alt="puppy image 2" class="image2">
+    <!-- Main content with three columns -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4 mb-md-0">
+                <img src="./images/puppy-1.jpg" alt="puppy 1" />
+            </div>
+            <div class="d-none d-md-block col-md-4 missing px-5 pt-5">
+                <p class="text-center fw-bold">Puppy missing here!!</p>
+            </div>
+            <div class="mt-md-0 col-md-4 mt-5">
+                <img src="./images/puppy-2.jpg" alt="puppy 2" />
+            </div>
+        </div>
     </section>
-    <h2>more puppies </h2>
-    <section class="more-puppies">
 
-        <img src="images/puppy-3.jpg" alt="puppy image3">
-        <img src="images/puppy-4.jpg" alt="puppy image4">
+    <!-- Additional puppies section -->
+    <section class="text-center my-5">
+        <h2 class="fw-bold">More Puppies</h2>
     </section>
 
-    <footer>
-        <p>developed by josh</p>
-    </footer>
+    <!-- Section with two more puppy images -->
+    <section class="container">
+        <div class="row">
+            <div class="mb-5 col-md-6 mb-md-0">
+                <img src="./images/puppy-3.jpg" alt="puppy 3" />
+            </div>
+            <div class="col-md-6">
+                <img src="./images/puppy-4.jpg" alt="puppy 4" />
+            </div>
+        </div>
+    </section>
 
-
+    <!-- Footer section -->
+    <footer class="blueBG text-center p-5 mt-5">Developed by : josiah</footer>
 
 </body>
-
 </html>
