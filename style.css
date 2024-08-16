@@ -1,32 +1,41 @@
-<!-- Global Reset: Remove default margin and padding from all elements -->
-* {
+<!-- Global Reset: Remove default margin and padding from all elements -->* {
     margin: 0;
     padding: 0;
 }
 
+
 /* Ensure all images take up the full width of their containers */
+
 img {
     width: 100%;
 }
 
+
 /* Styling for the blue background section with large white text */
+
 .blueBG {
     font-size: 40px;
     background-color: #085070;
     color: #fff;
 }
 
+
 /* Semi-transparent pink background for missing image section */
+
 .missing {
     background-color: rgba(198, 51, 156, 0.424);
 }
 
+
 /* Font size adjustment for the 'missing' section text */
+
 .missing p {
     font-size: 25px;
 }
 
+
 /* Increase font size for larger screens */
+
 @media (min-width: 992px) {
     .missing p {
         font-size: 45px;
