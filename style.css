@@ -1,4 +1,6 @@
-<!-- Global Reset: Remove default margin and padding from all elements -->* {
+/* general setups */
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -11,33 +13,41 @@ img {
 }
 
 
-/* Styling for the blue background section with large white text */
+/* header and footer */
 
-.blueBG {
-    font-size: 40px;
+header,
+footer {
     background-color: #085070;
-    color: #fff;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: 1.5em;
 }
 
 
-/* Semi-transparent pink background for missing image section */
+/* instade of setting the bg of the paragraph it is better to set the bg of the parent */
 
 .missing {
-    background-color: rgba(198, 51, 156, 0.424);
+    background-color: rgba(244, 128, 147, 0.389);
 }
-
-
-/* Font size adjustment for the 'missing' section text */
-
-.missing p {
-    font-size: 25px;
-}
-
 
 /* Increase font size for larger screens */
 
-@media (min-width: 992px) {
+@media(min-width:1024px) {
     .missing p {
-        font-size: 45px;
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin-top: 40rem !important;
     }
 }
+
+@media(min-width:1440px) {
+    .missing p {
+        font-size: 2.5em;
+    }
+}
+
+
